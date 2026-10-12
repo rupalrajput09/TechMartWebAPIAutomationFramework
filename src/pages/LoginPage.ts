@@ -29,7 +29,7 @@ export class LoginPage extends BasePage {
     // this.page is coming from BasePage (inheritance)
     async goToLoginPage(): Promise<void> {
         await this.page.goto('opencart/index.php?route=account/login');// Base URL will maintain somewhere else
-        // Here we are maintaing only path parameter (after the domain name part). We are not maintaining domain name here
+        // Here we maintaing only path parameter (after the domain name part). We are not maintaining domain name here
         // because it might change in another enviroment/ multiple environment like dev, stage, qa        
 //      In the goto() method, if we supply partial URL, it will take the base URL from playwright.config.ts file
     }

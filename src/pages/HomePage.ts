@@ -7,16 +7,16 @@ export class HomePage extends BasePage {
 
     private readonly logoutLink: Locator;
     private readonly headers: Locator;
-    private readonly searchBox: Locator;
-    private readonly searchIcon: Locator;
+    // private readonly searchBox: Locator;
+    // private readonly searchIcon: Locator;
     // Constructor 
 
     constructor(page: Page) {
         super(page);
         this.logoutLink = page.getByRole('link', { name: 'Logout' });
         this.headers = page.getByRole('heading', { level: 2 });
-        this.searchBox = page.getByRole('textbox', {name: 'Search'});
-        this.searchIcon = page.locator('#search button'); //CSS
+        // this.searchBox = page.getByRole('textbox', {name: 'Search'});
+        // this.searchIcon = page.locator('#search button'); //CSS
 
     }
 
